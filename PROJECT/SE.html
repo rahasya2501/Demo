@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style>
+h1
+{
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: left;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<title></title>
+<body>
+<h1>Software Engineering</h1>
+<ul>
+<li><a href="SEcho.html">CHO</a></li>
+<li><a href="SEnotes.html">Notes</a></li>
+<li><a href="SEQues.html">Question paper</a></li>
+</ul>
+<div id="flip"><b>Topics Of Software Engineering</b></div>
+<div id="panel">
+<ul>
+<li>Introduction to Software Engineering</li>
+<li>Process Concept</li>
+<li>Requirement Engineering</li>
+<li>Building Analysis Model</li>
+<li>Design Engineering</li>
+<li>Software Testing</li>
+<li>Project Scheduling</li>
+<li>Risk Management</li>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style>
+h1
+{
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: left;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<title></title>
+<body>
+<h1>Operating System</h1>
+<ul>
+<li><a href="oscho.html">CHO</a></li>
+<li><a href="file:///C:/Users/HP World/Downloads/PROJECT/osnotes.html">Notes</a></li>
+<li><a href="file:///C:/Users/HP World/Downloads/PROJECT/osquepaper.html">Question paper</a></li>
+</ul>
+<div id="flip"><b>Topics Of Operating System</b></div>
+<div id="panel">
+<ul>
+<li>Introduction to Operating System</li>
+<li>Process Concept</li>
+<li>Threads</li>
+<li>CPU Scheduling</li>
+<li>Process Synchronization</li>
+<li>Deadlock</li>
+<li>Memory Management</li>
+<li>File System</li>
+</div>
+</body>
+</html>

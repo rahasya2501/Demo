@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>C program</title>
+<body>
+<h3>Prime no code in C</h3>
+<pre>#include<stdio.h>
+ 
+int main()
+{
+   int n, i = 3, count, c;
+ 
+   printf("Enter prime numbers required\n");<cite>       enter no</cite>
+   scanf("%d",&n);
+   if ( n >= 1 )
+   {
+      printf("%d prime numbers are :\n",n);
+      printf("2\n");
+   }
+   for ( count = 2 ; count <= n ;  )
+   {
+      for ( c = 2 ; c <= i - 1 ; c++ )<cite>       loop for checking</cite>
+      {
+         if ( i%c == 0 )
+            break;
+      }
+      if ( c == i )
+      {
+         printf("%d\n", i);
+         count++;
+      }
+      i++;
+   }
+ 
+   return 0;
+}</pre>
+<h3>factorial code in C</h3>
+<pre>
+#include <stdio.h>
+ 
+int main()
+{
+  int c, n, fact = 1;
+ printf("Enter a number to calculate its factorial\n");<cite>      enter no</cite>
+  scanf("%d", &n);
+ for (c = 1; c <= n; c++)<cite>         loop for checking</cite>
+    fact = fact * c;
+printf("Factorial of %d = %d\n", n, fact);
+ return 0;
+}</pre>
+</body>
+</head>
+</html>

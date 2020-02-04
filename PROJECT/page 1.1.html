@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image:url("books2.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+}
+div {
+  background-color: lightgrey;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+   margin: 150px;
+  width: 30%;
+  border: 10px solid #73AD21;
+  padding: 10px;
+  text-weigth:30px;
+}
+</style>
+</head>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<div>
+<img src="logo 2.png" height="150" width="150"><br>
+<form name="myform" method="post"  action="page2.html" onsubmit="return validateform()" >  
+<b>Username: </b><input type="text" name="name"><br/>  <br/>
+<b>Password: </b><input type="password" name="password"><br/>  <br/>
+<input type="submit" value="submit">
+</form>  
+</div>
+</form>
+</body>
+</html>

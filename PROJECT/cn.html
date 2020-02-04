@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style>
+h1
+{
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: left;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<title></title>
+<body>
+<h1>Computer Network</h1>
+<ul>
+<li><a href="oscho.html">CHO</a></li>
+<li><a href="file:///C:/Users/Acer/Downloads/project/cnnotes.html">Notes</a></li>
+<li><a href="file:///C:/Users/Acer/Downloads/project/cnpaper.html">Question paper</a></li>
+</ul>
+<div id="flip"><b>Topics Of Computer Networks(click here)</b></div>
+<div id="panel">
+<ul>
+<li>Introduction to Computer Network</li>
+<li>OSI Refrence MOdel</li>
+<li>Network Topology</li>
+<li>Local Access Network Acess</li>
+<li>Medium Access Sub Layer</li>
+<li>Data Link Layer</li>
+<li>Network Layer</li>
+<li>Transport Layer</li>
+<li>Presentation Layer</li>
+<li>Application Layer</li>
+<li>Internet and Public Network</li>
+</div>
+</body>
+</html>

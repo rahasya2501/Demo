@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>regi</title>
+<body>
+<p align="center"><b><u>Registration Form</b></u></p>
+<form action="">
+<fieldset>
+<legend>Personal</legend>
+Firstname: <input type="text" name="Firstname"></br>
+Lastname: <input type="text" name="Lastname"></br>
+Age: <input type="text" name="Age"></br>
+Gender:  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female</br>
+Indian: <input type="radio" name="Indian" value="Yes"> Yes
+  <input type="radio" name="Indian" value="No"> No</br>
+</fieldset><fieldset>
+<legend>Address</legend>
+AddressLine1: <input type="text" name="AddressLine1"></br>
+AddressLine2: <input type="text" name="AddressLine2"></br>
+City:<select name="city">
+<option value="-">-</option>
+  <option value="chandigarh">Chandigarh</option>
+  <option value="delhi">Delhi</option>
+  <option value="kolkata">Kolkata</option>
+  <option value="mumbai">Mumbai</option>
+</select></br>
+State:<select name="State">
+  <option value="-">-</option>
+  <option value="punjab">Punjab</option>
+  <option value="haryana">Haryana</option>
+  <option value="rajasthan">Rajasthan</option>
+  <option value="Maharashtra">Maharashtra</option>
+</select></br>
+Pincode: <input type="text" name="Pincode"></br>
+</fieldset><fieldset>
+<legend>Hobbies</legend>
+<input type="checkbox" name="Hobbies" value="Reading">Reading<br>
+<input type="checkbox" name="Hobbies" value="Swimming">Swimming<br>
+<input type="checkbox" name="Hobbies" value="Surfing">Surfing<br>
+<input type="checkbox" name="Hobbies" value="Games">Games<br>
+</fieldset>
+<input type="button" value="Go back!" onclick="history.back()">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</body>
+</head>
+</html>
